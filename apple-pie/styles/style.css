@@ -22,3 +22,78 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+h1 {
+  text-align: center;
+  font-size: 120px;
+}
+
+h2 {
+  font-size: 33px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 3;
+}
+
+#hero-section {
+  background-image: url("../images/apple-pie.jpg");
+  background-size: cover;
+  height: 1000px;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  color: white;
+}
+
+#recipe-pre-text {
+  text-align: center;
+  padding: 30px 160px;
+}
+
+#recipe-image-container {
+  padding-top: 50px;
+}
+
+
+#ingredients {
+  padding: 30px 160px;
+}
+
+#directions {
+  padding: 30px 160px;
+}
+
+.ingredients-image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  width: 50%;
+}
+
+li {
+  line-height: 1.5;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul > li::before {
+  content: "- " ;
+}
+
+ol {
+  list-style: none;
+}
+
+ol > li {
+  counter-increment: listcounter;
+}
+
+ol > li::before {
+  content: counter(listcounter) ") ";
+}
